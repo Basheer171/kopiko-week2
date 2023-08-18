@@ -1,0 +1,183 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: black;
+}
+.row1{
+  background-color: black;
+}
+.head1{
+  color: #b7b7b7;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  font-size: 44px;
+  font-weight: 400;
+  letter-spacing: 6.5px;
+  line-height: 50.6px;
+  transition: 0.5s;
+}
+.head1:hover{
+  color: rgb(219, 79, 61);
+  transition: 0.5s;
+}
+.head2{
+  color: #b7b7b7;
+  font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  line-height: 21px;
+  margin-top: 4px;
+}
+.mainbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  border-top: 1px solid ;
+  width: 80%;
+}
+/** chat-gpt**/
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+  height: 60px;
+}
+
+.navbar-toggler {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+
+}
+/* my new*/
+.nav-item a:hover{
+  color: red;
+  transition: 0.5s;
+}
+.button1{
+  background-color: black;
+  color: red;
+  border: none;
+}
+.responsive-img {
+  width: 100%;
+  height: auto;
+  
+}
+.petti{
+  height: 150px;
+  width: 100%;
+  background-color: black;
+}
+.para1{
+  color: rgb(122, 122, 122);
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+}
+.petti1{
+  height: 250px;
+  width: 100%;
+  background-color: black;
+}
+.media{
+  display: flex;
+  justify-content: space-between;
+
+}
+.responsive-img1{
+  height: 35px;
+  cursor: pointer;
+}
+.petti2{
+  height: 250px;
+  width: 100%;
+  background-color: black;
+  
+}
+.end{
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  color: rgb(153, 153, 153);
+}
+.span{
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+  }
+  .span:hover{
+      color: #db4f3d;
+      text-decoration: underline;
+      transition: .5s;
+  }
+  .back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.back-to-top i {
+    color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+      display: flex;
+  }
+
+  .nav-list {
+      display: none;
+      flex-direction: column;
+      background-color: black;
+      position: absolute;
+      top: 60px;
+      left: 50;
+      width: 100%;
+  }
+
+  .nav-item {
+      margin: 10px;
+  }
+
+  .nav-list.active {
+      display: flex;
+  }
+}
